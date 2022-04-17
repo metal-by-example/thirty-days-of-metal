@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83ADCCCB280C889D006B951E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ADCCCA280C889D006B951E /* AppDelegate.swift */; };
+		83ADCCCD280C889D006B951E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ADCCCC280C889D006B951E /* ViewController.swift */; };
+		83ADCCCF280C889F006B951E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83ADCCCE280C889F006B951E /* Assets.xcassets */; };
+		83ADCCD2280C889F006B951E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83ADCCD0280C889F006B951E /* Main.storyboard */; };
+		83ADCCDE280C8A36006B951E /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ADCCD9280C8A36006B951E /* Math.swift */; };
+		83ADCCDF280C8A36006B951E /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ADCCDA280C8A36006B951E /* Node.swift */; };
+		83ADCCE0280C8A36006B951E /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ADCCDB280C8A36006B951E /* Renderer.swift */; };
+		83ADCCE1280C8A36006B951E /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83ADCCDC280C8A36006B951E /* Shaders.metal */; };
+		83ADCCE2280C8A36006B951E /* MeshUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ADCCDD280C8A36006B951E /* MeshUtilities.swift */; };
+		83ADCCEB280C8AC3006B951E /* spot_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 83ADCCE5280C8A9E006B951E /* spot_texture.png */; };
+		83ADCCEC280C8AC3006B951E /* spot_triangulated.obj in Resources */ = {isa = PBXBuildFile; fileRef = 83ADCCE9280C8A9E006B951E /* spot_triangulated.obj */; };
+		83ADCCEE280C9FCE006B951E /* spot_material.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 83ADCCED280C9FCE006B951E /* spot_material.mtl */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		83ADCCC7280C889D006B951E /* MetalMDLAsset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalMDLAsset.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ADCCCA280C889D006B951E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83ADCCCC280C889D006B951E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83ADCCCE280C889F006B951E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83ADCCD1280C889F006B951E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83ADCCD3280C889F006B951E /* MetalMDLAsset.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MetalMDLAsset.entitlements; sourceTree = "<group>"; };
+		83ADCCD9280C8A36006B951E /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		83ADCCDA280C8A36006B951E /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		83ADCCDB280C8A36006B951E /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		83ADCCDC280C8A36006B951E /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		83ADCCDD280C8A36006B951E /* MeshUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeshUtilities.swift; sourceTree = "<group>"; };
+		83ADCCE5280C8A9E006B951E /* spot_texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spot_texture.png; sourceTree = "<group>"; };
+		83ADCCE9280C8A9E006B951E /* spot_triangulated.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = spot_triangulated.obj; sourceTree = "<group>"; };
+		83ADCCED280C9FCE006B951E /* spot_material.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spot_material.mtl; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83ADCCC4280C889D006B951E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83ADCCBE280C889D006B951E = {
+			isa = PBXGroup;
+			children = (
+				83ADCCC9280C889D006B951E /* MetalMDLAsset */,
+				83ADCCC8280C889D006B951E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83ADCCC8280C889D006B951E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83ADCCC7280C889D006B951E /* MetalMDLAsset.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83ADCCC9280C889D006B951E /* MetalMDLAsset */ = {
+			isa = PBXGroup;
+			children = (
+				83ADCCE3280C8A92006B951E /* Resources */,
+				83ADCCDB280C8A36006B951E /* Renderer.swift */,
+				83ADCCDA280C8A36006B951E /* Node.swift */,
+				83ADCCD9280C8A36006B951E /* Math.swift */,
+				83ADCCDD280C8A36006B951E /* MeshUtilities.swift */,
+				83ADCCCC280C889D006B951E /* ViewController.swift */,
+				83ADCCCA280C889D006B951E /* AppDelegate.swift */,
+				83ADCCDC280C8A36006B951E /* Shaders.metal */,
+				83ADCCCE280C889F006B951E /* Assets.xcassets */,
+				83ADCCD0280C889F006B951E /* Main.storyboard */,
+				83ADCCD3280C889F006B951E /* MetalMDLAsset.entitlements */,
+			);
+			path = MetalMDLAsset;
+			sourceTree = "<group>";
+		};
+		83ADCCE3280C8A92006B951E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				83ADCCE4280C8A9E006B951E /* spot */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		83ADCCE4280C8A9E006B951E /* spot */ = {
+			isa = PBXGroup;
+			children = (
+				83ADCCE5280C8A9E006B951E /* spot_texture.png */,
+				83ADCCE9280C8A9E006B951E /* spot_triangulated.obj */,
+				83ADCCED280C9FCE006B951E /* spot_material.mtl */,
+			);
+			path = spot;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83ADCCC6280C889D006B951E /* MetalMDLAsset */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83ADCCD6280C889F006B951E /* Build configuration list for PBXNativeTarget "MetalMDLAsset" */;
+			buildPhases = (
+				83ADCCC3280C889D006B951E /* Sources */,
+				83ADCCC4280C889D006B951E /* Frameworks */,
+				83ADCCC5280C889D006B951E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetalMDLAsset;
+			productName = MetalMDLAsset;
+			productReference = 83ADCCC7280C889D006B951E /* MetalMDLAsset.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83ADCCBF280C889D006B951E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					83ADCCC6280C889D006B951E = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 83ADCCC2280C889D006B951E /* Build configuration list for PBXProject "MetalMDLAsset" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83ADCCBE280C889D006B951E;
+			productRefGroup = 83ADCCC8280C889D006B951E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83ADCCC6280C889D006B951E /* MetalMDLAsset */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83ADCCC5280C889D006B951E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ADCCEB280C8AC3006B951E /* spot_texture.png in Resources */,
+				83ADCCEE280C9FCE006B951E /* spot_material.mtl in Resources */,
+				83ADCCCF280C889F006B951E /* Assets.xcassets in Resources */,
+				83ADCCD2280C889F006B951E /* Main.storyboard in Resources */,
+				83ADCCEC280C8AC3006B951E /* spot_triangulated.obj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83ADCCC3280C889D006B951E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ADCCE2280C8A36006B951E /* MeshUtilities.swift in Sources */,
+				83ADCCE1280C8A36006B951E /* Shaders.metal in Sources */,
+				83ADCCCD280C889D006B951E /* ViewController.swift in Sources */,
+				83ADCCCB280C889D006B951E /* AppDelegate.swift in Sources */,
+				83ADCCDE280C8A36006B951E /* Math.swift in Sources */,
+				83ADCCE0280C8A36006B951E /* Renderer.swift in Sources */,
+				83ADCCDF280C8A36006B951E /* Node.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		83ADCCD0280C889F006B951E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83ADCCD1280C889F006B951E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83ADCCD4280C889F006B951E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83ADCCD5280C889F006B951E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		83ADCCD7280C889F006B951E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MetalMDLAsset/MetalMDLAsset.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G784MNW7L7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.fourspace.MetalMDLAsset;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		83ADCCD8280C889F006B951E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MetalMDLAsset/MetalMDLAsset.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G784MNW7L7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.fourspace.MetalMDLAsset;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83ADCCC2280C889D006B951E /* Build configuration list for PBXProject "MetalMDLAsset" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83ADCCD4280C889F006B951E /* Debug */,
+				83ADCCD5280C889F006B951E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83ADCCD6280C889F006B951E /* Build configuration list for PBXNativeTarget "MetalMDLAsset" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83ADCCD7280C889F006B951E /* Debug */,
+				83ADCCD8280C889F006B951E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83ADCCBF280C889D006B951E /* Project object */;
+}
