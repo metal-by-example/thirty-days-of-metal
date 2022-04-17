@@ -1,0 +1,12 @@
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "levels" : [
+    {
+      "filename" : "UV_Grid_Sm.jpg",
+      "mipmap-level" : "base"
+    }
+  ]
+}
