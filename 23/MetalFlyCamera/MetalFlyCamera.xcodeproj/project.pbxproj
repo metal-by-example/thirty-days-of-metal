@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8304FCCF2820884900B6E519 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83204E89282033DF005B7592 /* ViewController.swift */; };
+		83204E54281F8E91005B7592 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83204E53281F8E91005B7592 /* AppDelegate.swift */; };
+		83204E58281F8E92005B7592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83204E57281F8E92005B7592 /* Assets.xcassets */; };
+		83204E5B281F8E92005B7592 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83204E59281F8E92005B7592 /* Main.storyboard */; };
+		83204E70281F8EBE005B7592 /* asteroid.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 83204E63281F8EBE005B7592 /* asteroid.mtl */; };
+		83204E71281F8EBE005B7592 /* asteroid2.obj in Resources */ = {isa = PBXBuildFile; fileRef = 83204E64281F8EBE005B7592 /* asteroid2.obj */; };
+		83204E72281F8EBE005B7592 /* asteroid3.obj in Resources */ = {isa = PBXBuildFile; fileRef = 83204E65281F8EBE005B7592 /* asteroid3.obj */; };
+		83204E74281F8EBE005B7592 /* asteroid1.obj in Resources */ = {isa = PBXBuildFile; fileRef = 83204E67281F8EBE005B7592 /* asteroid1.obj */; };
+		83204E75281F8EBE005B7592 /* asteroid.png in Resources */ = {isa = PBXBuildFile; fileRef = 83204E68281F8EBE005B7592 /* asteroid.png */; };
+		83204E76281F8EBE005B7592 /* starscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 83204E69281F8EBE005B7592 /* starscape.png */; };
+		83204E77281F8EBE005B7592 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83204E6A281F8EBE005B7592 /* Shaders.metal */; };
+		83204E78281F8EBE005B7592 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83204E6B281F8EBE005B7592 /* Node.swift */; };
+		83204E79281F8EBE005B7592 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83204E6C281F8EBE005B7592 /* Light.swift */; };
+		83204E7A281F8EBE005B7592 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83204E6D281F8EBE005B7592 /* Renderer.swift */; };
+		83204E7B281F8EBE005B7592 /* MeshUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83204E6E281F8EBE005B7592 /* MeshUtilities.swift */; };
+		83204E7C281F8EBE005B7592 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83204E6F281F8EBE005B7592 /* Math.swift */; };
+		83204E7E281F8F07005B7592 /* FlyCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83204E7D281F8F07005B7592 /* FlyCameraController.swift */; };
+		83204E86282033DF005B7592 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83204E85282033DF005B7592 /* AppDelegate.swift */; };
+		83204E8A282033DF005B7592 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83204E89282033DF005B7592 /* ViewController.swift */; };
+		83204E8D282033DF005B7592 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83204E8B282033DF005B7592 /* Main.storyboard */; };
+		83204E8F282033E0005B7592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83204E8E282033E0005B7592 /* Assets.xcassets */; };
+		83204E92282033E0005B7592 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83204E90282033E0005B7592 /* LaunchScreen.storyboard */; };
+		83204E98282034C5005B7592 /* FlyCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83204E7D281F8F07005B7592 /* FlyCameraController.swift */; };
+		83204E99282034C5005B7592 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83204E6C281F8EBE005B7592 /* Light.swift */; };
+		83204E9A282034C5005B7592 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83204E6D281F8EBE005B7592 /* Renderer.swift */; };
+		83204E9B282034C5005B7592 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83204E6A281F8EBE005B7592 /* Shaders.metal */; };
+		83204E9C282034C5005B7592 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83204E6F281F8EBE005B7592 /* Math.swift */; };
+		83204E9D282034C5005B7592 /* MeshUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83204E6E281F8EBE005B7592 /* MeshUtilities.swift */; };
+		83204E9E282034C5005B7592 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83204E6B281F8EBE005B7592 /* Node.swift */; };
+		83204E9F282034CD005B7592 /* asteroid1.obj in Resources */ = {isa = PBXBuildFile; fileRef = 83204E67281F8EBE005B7592 /* asteroid1.obj */; };
+		83204EA0282034CD005B7592 /* asteroid.png in Resources */ = {isa = PBXBuildFile; fileRef = 83204E68281F8EBE005B7592 /* asteroid.png */; };
+		83204EA1282034CD005B7592 /* starscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 83204E69281F8EBE005B7592 /* starscape.png */; };
+		83204EA2282034CD005B7592 /* asteroid.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 83204E63281F8EBE005B7592 /* asteroid.mtl */; };
+		83204EA3282034CD005B7592 /* asteroid3.obj in Resources */ = {isa = PBXBuildFile; fileRef = 83204E65281F8EBE005B7592 /* asteroid3.obj */; };
+		83204EA4282034CD005B7592 /* asteroid2.obj in Resources */ = {isa = PBXBuildFile; fileRef = 83204E64281F8EBE005B7592 /* asteroid2.obj */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		83204E50281F8E91005B7592 /* Fly Camera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fly Camera.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83204E53281F8E91005B7592 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83204E57281F8E92005B7592 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83204E5A281F8E92005B7592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83204E5C281F8E92005B7592 /* MetalFlyCamera.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MetalFlyCamera.entitlements; sourceTree = "<group>"; };
+		83204E63281F8EBE005B7592 /* asteroid.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = asteroid.mtl; sourceTree = "<group>"; };
+		83204E64281F8EBE005B7592 /* asteroid2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = asteroid2.obj; sourceTree = "<group>"; };
+		83204E65281F8EBE005B7592 /* asteroid3.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = asteroid3.obj; sourceTree = "<group>"; };
+		83204E67281F8EBE005B7592 /* asteroid1.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = asteroid1.obj; sourceTree = "<group>"; };
+		83204E68281F8EBE005B7592 /* asteroid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid.png; sourceTree = "<group>"; };
+		83204E69281F8EBE005B7592 /* starscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starscape.png; sourceTree = "<group>"; };
+		83204E6A281F8EBE005B7592 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		83204E6B281F8EBE005B7592 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		83204E6C281F8EBE005B7592 /* Light.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
+		83204E6D281F8EBE005B7592 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		83204E6E281F8EBE005B7592 /* MeshUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeshUtilities.swift; sourceTree = "<group>"; };
+		83204E6F281F8EBE005B7592 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		83204E7D281F8F07005B7592 /* FlyCameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyCameraController.swift; sourceTree = "<group>"; };
+		83204E83282033DF005B7592 /* MetalFlyCamera-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MetalFlyCamera-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83204E85282033DF005B7592 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83204E89282033DF005B7592 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83204E8C282033DF005B7592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83204E8E282033E0005B7592 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83204E91282033E0005B7592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83204E4D281F8E91005B7592 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83204E80282033DF005B7592 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83204E47281F8E91005B7592 = {
+			isa = PBXGroup;
+			children = (
+				83204E972820349C005B7592 /* Common */,
+				83204E52281F8E91005B7592 /* macOS */,
+				83204E84282033DF005B7592 /* iOS */,
+				83204E51281F8E91005B7592 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83204E51281F8E91005B7592 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83204E50281F8E91005B7592 /* Fly Camera.app */,
+				83204E83282033DF005B7592 /* MetalFlyCamera-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83204E52281F8E91005B7592 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				83204E53281F8E91005B7592 /* AppDelegate.swift */,
+				83204E57281F8E92005B7592 /* Assets.xcassets */,
+				83204E59281F8E92005B7592 /* Main.storyboard */,
+				83204E5C281F8E92005B7592 /* MetalFlyCamera.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		83204E62281F8EBE005B7592 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				83204E63281F8EBE005B7592 /* asteroid.mtl */,
+				83204E64281F8EBE005B7592 /* asteroid2.obj */,
+				83204E65281F8EBE005B7592 /* asteroid3.obj */,
+				83204E67281F8EBE005B7592 /* asteroid1.obj */,
+				83204E68281F8EBE005B7592 /* asteroid.png */,
+				83204E69281F8EBE005B7592 /* starscape.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		83204E84282033DF005B7592 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				83204E85282033DF005B7592 /* AppDelegate.swift */,
+				83204E8B282033DF005B7592 /* Main.storyboard */,
+				83204E8E282033E0005B7592 /* Assets.xcassets */,
+				83204E90282033E0005B7592 /* LaunchScreen.storyboard */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		83204E972820349C005B7592 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				83204E62281F8EBE005B7592 /* Resources */,
+				83204E6C281F8EBE005B7592 /* Light.swift */,
+				83204E6B281F8EBE005B7592 /* Node.swift */,
+				83204E7D281F8F07005B7592 /* FlyCameraController.swift */,
+				83204E6D281F8EBE005B7592 /* Renderer.swift */,
+				83204E6F281F8EBE005B7592 /* Math.swift */,
+				83204E6E281F8EBE005B7592 /* MeshUtilities.swift */,
+				83204E89282033DF005B7592 /* ViewController.swift */,
+				83204E6A281F8EBE005B7592 /* Shaders.metal */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83204E4F281F8E91005B7592 /* MetalFlyCamera-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83204E5F281F8E92005B7592 /* Build configuration list for PBXNativeTarget "MetalFlyCamera-macOS" */;
+			buildPhases = (
+				83204E4C281F8E91005B7592 /* Sources */,
+				83204E4D281F8E91005B7592 /* Frameworks */,
+				83204E4E281F8E91005B7592 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MetalFlyCamera-macOS";
+			productName = MetalFlyCamera;
+			productReference = 83204E50281F8E91005B7592 /* Fly Camera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83204E82282033DF005B7592 /* MetalFlyCamera-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83204E94282033E0005B7592 /* Build configuration list for PBXNativeTarget "MetalFlyCamera-iOS" */;
+			buildPhases = (
+				83204E7F282033DF005B7592 /* Sources */,
+				83204E80282033DF005B7592 /* Frameworks */,
+				83204E81282033DF005B7592 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MetalFlyCamera-iOS";
+			productName = "MetalFlyCamera-iOS";
+			productReference = 83204E83282033DF005B7592 /* MetalFlyCamera-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83204E48281F8E91005B7592 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					83204E4F281F8E91005B7592 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					83204E82282033DF005B7592 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 83204E4B281F8E91005B7592 /* Build configuration list for PBXProject "MetalFlyCamera" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83204E47281F8E91005B7592;
+			productRefGroup = 83204E51281F8E91005B7592 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83204E4F281F8E91005B7592 /* MetalFlyCamera-macOS */,
+				83204E82282033DF005B7592 /* MetalFlyCamera-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83204E4E281F8E91005B7592 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83204E70281F8EBE005B7592 /* asteroid.mtl in Resources */,
+				83204E75281F8EBE005B7592 /* asteroid.png in Resources */,
+				83204E58281F8E92005B7592 /* Assets.xcassets in Resources */,
+				83204E72281F8EBE005B7592 /* asteroid3.obj in Resources */,
+				83204E76281F8EBE005B7592 /* starscape.png in Resources */,
+				83204E5B281F8E92005B7592 /* Main.storyboard in Resources */,
+				83204E74281F8EBE005B7592 /* asteroid1.obj in Resources */,
+				83204E71281F8EBE005B7592 /* asteroid2.obj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83204E81282033DF005B7592 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83204E92282033E0005B7592 /* LaunchScreen.storyboard in Resources */,
+				83204E8F282033E0005B7592 /* Assets.xcassets in Resources */,
+				83204EA1282034CD005B7592 /* starscape.png in Resources */,
+				83204E9F282034CD005B7592 /* asteroid1.obj in Resources */,
+				83204EA3282034CD005B7592 /* asteroid3.obj in Resources */,
+				83204EA0282034CD005B7592 /* asteroid.png in Resources */,
+				83204EA4282034CD005B7592 /* asteroid2.obj in Resources */,
+				83204E8D282033DF005B7592 /* Main.storyboard in Resources */,
+				83204EA2282034CD005B7592 /* asteroid.mtl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83204E4C281F8E91005B7592 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83204E7B281F8EBE005B7592 /* MeshUtilities.swift in Sources */,
+				83204E7E281F8F07005B7592 /* FlyCameraController.swift in Sources */,
+				83204E77281F8EBE005B7592 /* Shaders.metal in Sources */,
+				8304FCCF2820884900B6E519 /* ViewController.swift in Sources */,
+				83204E79281F8EBE005B7592 /* Light.swift in Sources */,
+				83204E54281F8E91005B7592 /* AppDelegate.swift in Sources */,
+				83204E7A281F8EBE005B7592 /* Renderer.swift in Sources */,
+				83204E78281F8EBE005B7592 /* Node.swift in Sources */,
+				83204E7C281F8EBE005B7592 /* Math.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83204E7F282033DF005B7592 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83204E9B282034C5005B7592 /* Shaders.metal in Sources */,
+				83204E8A282033DF005B7592 /* ViewController.swift in Sources */,
+				83204E98282034C5005B7592 /* FlyCameraController.swift in Sources */,
+				83204E9E282034C5005B7592 /* Node.swift in Sources */,
+				83204E9C282034C5005B7592 /* Math.swift in Sources */,
+				83204E99282034C5005B7592 /* Light.swift in Sources */,
+				83204E9A282034C5005B7592 /* Renderer.swift in Sources */,
+				83204E86282033DF005B7592 /* AppDelegate.swift in Sources */,
+				83204E9D282034C5005B7592 /* MeshUtilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		83204E59281F8E92005B7592 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83204E5A281F8E92005B7592 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83204E8B282033DF005B7592 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83204E8C282033DF005B7592 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83204E90282033E0005B7592 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83204E91282033E0005B7592 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83204E5D281F8E92005B7592 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83204E5E281F8E92005B7592 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		83204E60281F8E92005B7592 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/MetalFlyCamera.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G784MNW7L7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.fourspace.MetalFlyCamera;
+				PRODUCT_NAME = "Fly Camera";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		83204E61281F8E92005B7592 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/MetalFlyCamera.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G784MNW7L7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.fourspace.MetalFlyCamera;
+				PRODUCT_NAME = "Fly Camera";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		83204E95282033E0005B7592 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G784MNW7L7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fly Camera";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.fourspace.MetalFlyCamera-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83204E96282033E0005B7592 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G784MNW7L7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fly Camera";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.fourspace.MetalFlyCamera-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83204E4B281F8E91005B7592 /* Build configuration list for PBXProject "MetalFlyCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83204E5D281F8E92005B7592 /* Debug */,
+				83204E5E281F8E92005B7592 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83204E5F281F8E92005B7592 /* Build configuration list for PBXNativeTarget "MetalFlyCamera-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83204E60281F8E92005B7592 /* Debug */,
+				83204E61281F8E92005B7592 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83204E94282033E0005B7592 /* Build configuration list for PBXNativeTarget "MetalFlyCamera-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83204E95282033E0005B7592 /* Debug */,
+				83204E96282033E0005B7592 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83204E48281F8E91005B7592 /* Project object */;
+}
