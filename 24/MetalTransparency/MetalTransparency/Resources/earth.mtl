@@ -1,0 +1,8 @@
+newmtl base
+Ns 64.0
+Tr 1.0
+Kd 1.0 1.0 1.0
+Ks 1.0 1.0 1.0
+Ka 0.1 0.1 0.1
+map_Kd earth.png
+
