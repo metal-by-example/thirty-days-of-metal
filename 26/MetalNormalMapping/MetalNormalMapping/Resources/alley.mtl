@@ -1,0 +1,17 @@
+newmtl wall
+Ns 32.0
+Tr 1.0
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ka 0.1 0.1 0.1
+map_Kd brick_baseColor.png
+map_tangentSpaceNormal brick_normal.png
+
+newmtl floor
+Ns 32.0
+Tr 1.0
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ka 0.1 0.1 0.1
+map_Kd cobblestone_baseColor.png
+map_tangentSpaceNormal cobblestone_normal.png
