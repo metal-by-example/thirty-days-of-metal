@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "83204E4F281F8E91005B7592"
-               BuildableName = "MetalFlyCamera-macOS.app"
+               BuildableName = "Fly Camera.app"
                BlueprintName = "MetalFlyCamera-macOS"
                ReferencedContainer = "container:MetalFlyCamera.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "83204E4F281F8E91005B7592"
-            BuildableName = "MetalFlyCamera-macOS.app"
+            BuildableName = "Fly Camera.app"
             BlueprintName = "MetalFlyCamera-macOS"
             ReferencedContainer = "container:MetalFlyCamera.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "83204E4F281F8E91005B7592"
-            BuildableName = "MetalFlyCamera-macOS.app"
+            BuildableName = "Fly Camera.app"
             BlueprintName = "MetalFlyCamera-macOS"
             ReferencedContainer = "container:MetalFlyCamera.xcodeproj">
          </BuildableReference>
