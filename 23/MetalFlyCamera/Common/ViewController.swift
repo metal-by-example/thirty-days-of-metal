@@ -175,6 +175,7 @@ class ViewController: BaseViewController {
 #if os(iOS)
     @available(iOS 15.0, *)
     private func connectVirtualController() {
+        #if swift(>=5.5) // Really we want to check for compile-time availability of the iOS 15 SDK, but there's no way to do that.
         let controllerConfig = GCVirtualController.Configuration()
         controllerConfig.elements = [
             GCInputLeftThumbstick,
@@ -183,12 +184,15 @@ class ViewController: BaseViewController {
         let controller = GCVirtualController(configuration: controllerConfig)
         controller.connect()
         virtualController = controller
+        #endif
     }
 
     @available(iOS 15.0, *)
     private func disconnectVirtualController() {
+        #if swift(>=5.5) // Really we want to check for compile-time availability of the iOS 15 SDK, but there's no way to do that.
         (virtualController as? GCVirtualController)?.disconnect()
         virtualController = nil
+        #endif
     }
 #endif
 }

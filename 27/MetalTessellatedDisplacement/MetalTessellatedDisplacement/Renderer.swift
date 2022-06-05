@@ -115,9 +115,13 @@ class Renderer: NSObject, MTKViewDelegate {
                              error: nil)
         asset.loadTextures()
         if let mdlMesh = asset.meshes.first {
-            mdlMesh.addTangentBasis(forTextureCoordinateAttributeNamed: MDLVertexAttributeTextureCoordinate,
-                                    normalAttributeNamed: MDLVertexAttributeNormal,
-                                    tangentAttributeNamed: MDLVertexAttributeTangent)
+            if #available(macOS 11.0, *) {
+                mdlMesh.addOrthTanBasis(forTextureCoordinateAttributeNamed: MDLVertexAttributeTextureCoordinate,
+                                        normalAttributeNamed: MDLVertexAttributeNormal,
+                                        tangentAttributeNamed: MDLVertexAttributeTangent)
+            } else {
+                print("Skipping tangent basis generation to avoid a crash on macOS Catalina")
+            }
             mdlMesh.vertexDescriptor = mdlVertexDescriptor
             let mesh = try! PatchMesh(mesh: mdlMesh, device: device)
             let node = Node(mesh: mesh)

@@ -138,7 +138,11 @@ extension simd_quatf {
     func rotate(_ v: SIMD3<Float>) -> SIMD3<Float> {
         let u = imag
         let w = real
-        let vr = 2.0 * dot(u, v) * u + (w * w - dot(u, u)) * v + 2.0 * w * cross(u, v)
-        return vr
+        // The lines below are oddly broken-up because the complete expression
+        // was too complex for the Swift 5.3 compiler to typecheck.
+        let t0 = 2.0 * dot(u, v) * u
+        let t1 = (w * w - dot(u, u)) * v
+        let t2 = 2.0 * w * cross(u, v)
+        return t0 + t1 + t2
     }
 }

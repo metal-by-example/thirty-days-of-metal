@@ -488,13 +488,13 @@ class Renderer: NSObject, MTKViewDelegate {
         updateNodeConstants()
 
         guard let drawable = view.currentDrawable else { return }
-        let renderPassDescriptor = renderPassDescriptor(colorTexture: drawable.texture,
-                                                        depthTexture: view.depthStencilTexture)
+        let passDescriptor = renderPassDescriptor(colorTexture: drawable.texture,
+                                                  depthTexture: view.depthStencilTexture)
 
         guard let commandBuffer = commandQueue.makeCommandBuffer() else { return }
 
         drawShadows(light: sunLight, commandBuffer: commandBuffer)
-        drawMainPass(renderPassDescriptor: renderPassDescriptor, commandBuffer: commandBuffer)
+        drawMainPass(renderPassDescriptor: passDescriptor, commandBuffer: commandBuffer)
 
         commandBuffer.present(view.currentDrawable!)
 

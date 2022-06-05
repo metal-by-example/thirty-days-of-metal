@@ -22,13 +22,6 @@ func lcm(_ m: Int, _ n: Int) -> Int {
     return m * n / gcd(m, n)
 }
 
-//func mipmapLevelCount(for size: Int) -> Int {
-//    if (size == 0) {
-//        return 1
-//    }
-//    return Int(floor(log2(Float(size)))) + 1
-//}
-
 extension SIMD4 {
     var xyz: SIMD3<Scalar> {
         return SIMD3<Scalar>(x, y, z)
@@ -138,7 +131,11 @@ extension simd_quatf {
     func rotate(_ v: SIMD3<Float>) -> SIMD3<Float> {
         let u = imag
         let w = real
-        let vr = 2.0 * dot(u, v) * u + (w * w - dot(u, u)) * v + 2.0 * w * cross(u, v)
-        return vr
+        // The lines below are oddly broken-up because the complete expression
+        // was too complex for the Swift 5.3 compiler to typecheck.
+        let t0 = 2.0 * dot(u, v) * u
+        let t1 = (w * w - dot(u, u)) * v
+        let t2 = 2.0 * w * cross(u, v)
+        return t0 + t1 + t2
     }
 }
